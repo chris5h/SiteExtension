@@ -1,0 +1,23 @@
+{
+	"name": "Statup Page Roaster",
+	"version": "1.02",
+	"description": "Ribbit Ribbit",
+	"manifest_version": 3,
+	"background": {
+	"service_worker": "js/background.js"
+    },	  
+	"icons":	{
+		"128":	"logo.png"
+	},
+	"action":{
+		"default_title":	"Statup Page Roaster",
+		"default_popup":	"real_popup.html"
+	},
+	"chrome_url_overrides" : {
+		"newtab": "real_popup.html"
+	  },
+	"permissions": [
+		"tabs",
+		"storage"
+	]
+}
